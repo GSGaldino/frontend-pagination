@@ -1,0 +1,56 @@
+header {
+    width: 100%;
+    background: #333333;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,1);
+}
+
+header h1 {
+    color: var(--text-color);
+}
+
+body {
+    background: var(--background-color);
+}
+
+section {
+    width: 100%;
+    max-width: 1190px;
+    background: var(--section-color);
+    margin: 0 auto;
+    padding: 0px 10px;
+}
+
+section .list .item {
+    color: var(--text-color);
+    border-bottom: 2px solid var(--text-color);
+    padding: 20px;
+}
+
+section .pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+section .pagination div:not(.numbers), 
+section .pagination div.numbers div {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+section .pagination div:not(.numbers):hover, 
+section .pagination div.numbers div:hover {
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+    -moz-filter: brightness(50%);
+    -o-filter: brightness(50%);
+}

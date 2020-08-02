@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Front-End Pagination</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+	<header>
+		<h1>Front-end Pagination</h1>
+	</header>
+
+	<section>
+		<div class="list">
+		</div>
+		<div class="pagination">
+			<div class="first">&#171;</div>
+			<div class="prev">&lt;</div>
+			<div class="numbers">
+				<div>1</div>
+			</div>
+			<div class="next">&gt;</div>
+			<div class="last">&#187;</div>
+		</div>
+	</section>
+
+	<script src="../src/DataController.js"></script>
+	<script src="../src/StateController.js"></script>
+	<script src="../src/ButtonsController.js"></script>
+	
+	<script>
+		const buttons = new ButtonsController();
+		buttons.render();
+	</script>
+</body>
+
+</html>
